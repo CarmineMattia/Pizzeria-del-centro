@@ -5,48 +5,377 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria del centro</title>
+    
+<link rel="icon" href="/img/pizzeriaDelCentro-logo.png">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:ital,wght@0,500;0,700;0,800;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <!-- temporary code -->
-    <!-- ************************* -->
-    <header>
-      <h1>Pizzeria del centro</h1>
-    </header>
-    <main>
-      <div class="d-flex flex-column align-items-center">
-        <h2>Coming Soon..</h2>
-        <p>Il sito è in costruzione!</p>
-        <p>
-          Grazie per la vostra pazienza mentre lavoriamo allo sviluppo del
-          nostro sito web.
-        </p>
-        <div
-          class="tenor-gif-embed"
-          data-postid="15711238"
-          data-share-method="host"
-          data-aspect-ratio="1"
-          data-width="25%"
+    <div class="container-fluid p-0">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-600 align-items-center text-center" href="#">
+            <img src="/img/pizzeriaDelCentro-logo.png" alt="Logo" width="40" height="32" class="d-inline-block align-text-center ">
+            Pizzeria del Centro
+          </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <a href="https://tenor.com/view/cat-typing-in-progress-gif-15711238"
-            >Cat Typing GIF</a
-          >from <a href="https://tenor.com/search/cat-gifs">Cat GIFs</a>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active fw-600">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item active fw-600">
+              <a class="nav-link" href="/menu.html">Menù</a>
+            </li>
+            <li class="nav-item fw-600">
+              <a class="nav-link" href="/index.html#contatti">Dove & Orari</a>
+            </li>
+            <li class="nav-item fw-600">
+              <a class="nav-link" href="tel:0522154 6131">Chiama</a>
+            </li>
+          </ul>
         </div>
-        <script
-          type="text/javascript"
-          async
-          src="https://tenor.com/embed.js"
-        ></script>
+      </nav>
+      <!-- hero -->
+      <div class="row mb-5">
+        <div class="col-12 p-0">
+          <div class="hero text-start vh-100 h-75 img-background">
+            <div class="container ">
+              <p class="lead text-light">La pizza deliziosa per ogni palato</p>
+              <h1 class="display-4 text-light fw-600">PIZZERIA DEL CENTRO</h1>
+              <a href="menu.html" class="btn btn-light btn-lg button-hero"
+                >Sfoglia il Menù</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    <footer>
-      <p>Copyright © 2023 Carmine Mattia Castello</p>
-    </footer>
-    <!-- ********************************** -->
+      <!-- about us -->
+      <div class="container mt-5 mb-5">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-lg-6">
+            <div class="home-about text-start">
+              <h5 class="subtitle text-uppercase fw-light fs-6 text">
+                su di noi
+              </h5>
+              <h2 class="fw-bolder">
+                Pizzeria del centro: la vera pizza artigianale!
+              </h2>
+              <p class="aboutus-p fs-6 text">
+                La Pizzeria del Centro è il luogo ideale per assaporare la vera
+                pizza italiana.<br />
+                Con anni di esperienza nella cucina tradizionale, utilizziamo
+                solo gli ingredienti più freschi e di qualità <br />
+                per creare pizze deliziose. Il nostro impasto è preparato con
+                cura e attenzione, per garantire croccantezza e morbidezza
+                perfette ad ogni morso. Venite a scoprire perché siamo diventati
+                un punto di riferimento per gli amanti della pizza a Ciano
+                Denza.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-around">
+            <div class="img-wrap pe-4">
+              <img
+                class="img-aboutus rounded float-start"
+                src="/img/pexels-roman-odintsov-5903443.jpg"
+              
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img-aboutus rounded float-start"
+                src="/img/pexels-andrea-piacquadio-3811603.jpg"
+                alt="Pizza Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="row">
+        <div class="col-12">
+          <div class="container mt-5">
+            <h2 class="text-center">Menù</h2>
+            <p>Alcuni esempi delle nostre pizze!</p>
+            <div
+              class="row mt-5 d-flex align-items-center justify-content-around"
+            >
+              <div class="col-md-5">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Canossa</div>
+                      pomodoro mozzarella, crudo, rucola, scaglie di grana, glassa di aceto balsamico.
+                    </div>
+                    <span class="price ">9</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">La Rosa Selvaggia</div>
+                      pomodoro, mozzarella, salsiccia, crema di radicchio, scamorza affumicata
+                    </div>
+                    <span class="price">8.5</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Pizza del Centro</div>
+                      pomodoro, mozzarella melanzane, zucchine, peperoni pomodorini, porcini
+                    </div>
+                    <span class="price">8</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Tartufata</div>
+                      mozzarella, porcini, crema tartufata
+                    </div>
+                    <span class="price">7.5</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Gorgonzola e Noci</div>
+                      mozzarella, gorgonzola, noci
+                    </div>
+                    <span class="price">7.5</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Bologna</div>
+                      mozzarella, fuori cottura: mortadella, straciatella, crema di pistacchio
+                    </div>
+                    <span class="price">9.5</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">La Rustica</div>
+                      mozzarella, pancetta, stracchino, patate al forno
+
+                    </div>
+                    <span class="price">8.5</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Carbonara</div>
+                      mozzarella di bufala, pancetta, uova, pepe nero
+                    </div>
+                    <span class="price">8.5</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Ambrosia</div>
+                      mozzarella di bufala, pomodorini, pesto genovese
+                    </div>
+                    <span class="price">8.5</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="ms-auto me-auto">
+                      <div class="fw-bold">Piccantina</div>
+                      mozzarella, salame piccante, acciughe, friarielli
+                    </div>
+                    <span class="price">8</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carosel -->
+      <div
+      id="carouselExampleIndicators"
+      class="carousel slide mt-5 mb-5"
+      data-bs-ride="true"
+      >
+      <h2 class="text-center">Galleria</h2>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/img/margherita.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/cassetto.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/farcendo.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/tomato souce.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- contact us -->
+      <h2 id="contatti" class="d-flex justify-content-center mt-5 mb-4"> Dove
+      </h2>
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col embed-responsive embed-responsive-1by1">
+            <iframe
+              class="mb-4 embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d181539.89040289907!2d10.489837509474613!3d44.687748580826806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4780107158e1ff3f%3A0xfc87748e08464c!2sPiazza%20Giacomo%20Matteotti%2C%2011%2C%2042026%20Ciano%20d&#39;Enza%20RE!3m2!1d44.5928353!2d10.4084383!5e0!3m2!1sen!2sit!4v1674651420748!5m2!1sen!2sit"
+              width="500"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            class="col d-flex flex-column justify-content-center align-items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-clock"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+              />
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+              />
+            </svg>
+            <h3 class="m-3">I nostri orari sono</h3>
+            <p class="text-center lh-lg font-monospace">
+              <b> Lunedì Chiuso <br /></b><br />
+              Martedì 12-14 & 18-22:30<br />
+              Mercoledì 12-14 & 18-22:30<br />
+              Giovedi 12-14 & 18-22:30<br />
+              Venerdì 12-14 & 18-22:30<br />
+              Sabato 18-22:30<br />
+              Domenica 18-22:30<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row bg-foot">
+        <div class="col-12">
+          <footer class="bg-dark text-light py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 ">
+                  <h4 class="mb-4">Chiamaci</h4>
+                  <ul class="list-unstyled">
+                    <li class="foot-li-s"><a class="foot-a" href="tel:0522154 6131">0522 154 6131</a></li>
+                    <li class="foot-li-s">42026 Ciano d'Enza RE</a></li>
+                    <li class="foot-li-s">Piazza Giacomo Matteotti, 11</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="mb-4">Menu</h4>
+                  <ul class="list-unstyled">
+                    <li class="foot-li-s"><a class="foot-a" href="/menu.html#bianche">Bianche</a></li>
+                    <li class="foot-li-s"><a class="foot-a" href="/menu.html#gustose">Gustose</a></li>
+                    <li class="foot-li-s"><a class="foot-a" href="/menu.html#metro">Al Metro</a></li>
+                    <!-- <li><a class="foot-a" href="#">Drinks</a></li>
+                    <li><a class="foot-a" href="#">Desserts</a></li> -->
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="mb-4">Su di noi</h4>
+                  <p>
+                  Pizzeria del Centro, situata nel cuore di Ciano d'Enza. Offriamo una vasta selezione di pizze preparate con ingredienti freschi e di qualità. Venite a gustare le nostre specialità in un ambiente accogliente e familiare. Grazie per averci scelto come la vostra pizzeria preferita!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <div class="text-center p-1 bg-dark text-light">
+            © Copyright:
+            <a
+              class="text-white"
+              href="https://www.instagram.com/carmine__mattia/"
+              target="_blank"
+              >Carmine Mattia Castello</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
   </body>
 </html>

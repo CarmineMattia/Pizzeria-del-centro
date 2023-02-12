@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Pizzeria del centro</title>
+    <link rel="icon" href="/img/pizzeriaDelCentro-logo.png">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -12,79 +13,668 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
-    <div class="container-fluid">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Pizzeria</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    <section id="menu" class="py-5">
-      <div class="container">
-        <h1 class="text-center mb-4">Menu</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Pizza</h3>
-            <ul class="list-unstyled">
-              <li>
-                <h5>Margherita</h5>
-                <p>Tomato sauce, mozzarella cheese, fresh basil</p>
-              </li>
-              <li>
-                <h5>Pepperoni</h5>
-                <p>Tomato sauce, mozzarella cheese, pepperoni</p>
-              </li>
-              <li>
-                <h5>Vegetarian</h5>
-                <p>
-                  Tomato sauce, mozzarella cheese, bell peppers, onions,
-                  mushrooms
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3>Pasta</h3>
-            <ul class="list-unstyled">
-              <li>
-                <h5>Spaghetti Bolognese</h5>
-                <p>Spaghetti, ground beef, tomato sauce</p>
-              </li>
-              <li>
-                <h5>Fettuccine Alfredo</h5>
-                <p>Fettuccine, cream sauce, parmesan cheese</p>
-              </li>
-              <li>
-                <h5>Lasagna</h5>
-                <p>Layers of pasta, beef, ricotta cheese, tomato sauce</p>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <body style="background-color: #fcf7de">
+    <div class="contenitore-grid mt-5">
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-600 align-items-center text-center" href="#">
+      <img src="/img/pizzeriaDelCentro-logo.png" alt="Logo" width="40" height="32" class="d-inline-block align-text-center ">
+      Pizzeria del Centro
+    </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active fw-600">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item fw-600">
+        <a class="nav-link" href="/index.html#contatti">Dove & Orari</a>
+      </li>
+      <li class="nav-item fw-600">
+        <a class="nav-link" href="tel:0522154 6131">Chiama</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      <!-- <div class="sections">
+        <ul class="list-group list-group-flush text-start">
+          <li
+            class="list-group-item d-flex justify-content-center text-center align-items-center mt-1 text-light"   style="background-color: #703b3b;"
+          >
+              <div class="fw-bold fs-5">Classiche</div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Marinara</div>
+              pomodoro, aglio, origano
+            </div>
+            <span class="badge text-dark fs-5 text">4.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Margherita</div>
+              pomodoro, mozz.fior di latte
+            </div>
+            <span class="badge text-dark fs-5 text">5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Funghi</div>
+              pomodoro, mozz.fior di latte, funghi
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Prosciutto</div>
+              pomodoro, mozz.fior di latte, prosciutto cotto
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Salsiccia</div>
+              pomodoro, mozz.fior di latte, salsiccia
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Napoli</div>
+              pomodoro, mozz.fior di latte, acciughe, origano
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Würstel</div>
+              pomodoro, mozz.fior di latte, Würstel
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Tonno</div>
+              pomodoro, mozz.fior di latte, tonno
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Capricciosa</div>
+              pomodoro, mozz.fior di latte, prosciutto cotto, funghi, carciofi, salsiccia, olive
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Quattro Stagioni</div>
+              pomodoro, mozz.fior di latte, prosciutto cotto, funghi, carciofi, salsiccia
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Speciale</div>
+              pomodoro, mozz.fior di latte di bufala, pomodorini, basilico
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Crudo di Parma</div>
+              pomodoro, mozz.fior di latte, prosciutto crudo di Parma
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Pancetta</div>
+              pomodoro, mozz.fior di latte, pancetta
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Speck</div>
+              pomodoro, mozz.fior di latte, speck
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Quattro Formaggi</div>
+              pomodoro, mozz.fior di latte, pecorino, emmental, gorgonzola
+            </div>
+            <span class="badge text-dark fs-5 text">6.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Romana</div>
+              pomodoro, mozz.fior di latte, acciughe, capperi, origano, olive
+            </div>
+            <span class="badge text-dark fs-5 text">6.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Hanz</div>
+              pomodoro, mozz.fior di latte, würstel, patatine
+            </div>
+            <span class="badge text-dark fs-5 text">6.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Diavola</div>
+              pomodoro, mozz.fior di latte, spianata calabra
+            </div>
+            <span class="badge text-dark fs-5 text">6.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Stracchino e Rucola</div>
+              pomodoro, mozz.fior di latte, stracchino, rucola
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Calzone</div>
+              pomodoro, mozz.fior di latte, prosciutto cotto
+
+
+            </div>
+            <span class="badge text-dark fs-5 text">6</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Calzone farcito</div>
+              pomodoro, mozz.fior di latte, prosciutto cotto, funghi
+            </div>
+            <span class="badge text-dark fs-5 text">6.5</span>
+          </li>
+         
+        </ul>
+      </div> -->
+      <div class="sections">
+        <ul class="list-group list-group-flush text-start">
+          <li
+            class="list-group-item d-flex justify-content-center text-center align-items-center mt-1 text-light"   style="background-color: #703b3b;"
+          >
+              <div id="gustose" class="fw-bold fs-5">Gustose</div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Speciale</div>
+              pomodoro, mozzarella di bufala, pomodorini, basilico
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Nord & Sud</div>
+              pomodoro, mozzarella, 'nduja, gorgonzola
+            </div>
+            <span class="badge text-dark fs-5 text">8</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Amalfi</div>
+              pomodoro mozzarella, scamorza affumicata, pomodorini
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Tirolese
+              </div>
+              pomodoro mozzarella di Bufala, porcini trifolati, speck
+            </div>
+            <span class="badge text-dark fs-5 text">8.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Trentina</div>
+              pomodoro, mozzarella, gorgonzola, speck
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Francescana</div>
+              pomodoro mozzarella gorgonzola, porcini trifolati
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Matildica</div>
+              pomodoro, mozzarella, funghi porcini trifolati, pomodorini, Parmigiano Reggiano
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Pizza del Centro</div>
+              pomodoro, mozzarella melanzane, zucchine, peperoni pomodorini, porcini
+            </div>
+            <span class="badge text-dark fs-5 text">8</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">La Corte Vecia</div>
+              pomodoro, mozzarella, rucola, scaglie di grana, glassa di aceto balsamico
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Gustosa</div>
+              pomodoro, mozzarella, pancetta, gorgonzola, radicchio
+            </div>
+            <span class="badge text-dark fs-5 text">8.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Canossa</div>
+              pomodoro mozzarella proscrutto crudo, rucola, scaglie di grana,glassa di aceto balsamico.
+            </div>
+            <span class="badge text-dark fs-5 text">9</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Valtellina</div>
+              pomodoro mozzarella bresaola, rucola, scaglie di Grana.
+            </div>
+            <span class="badge text-dark fs-5 text">9</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Frutti di Mare</div>
+              pomodoro, mozzarella, seppie, calamari,vongole, cozze, polpi surimi
+            </div>
+            <span class="badge text-dark fs-5 text">8.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Miami</div>
+              pomodoro, mozzarella, gamberetti, zucchine
+            </div>
+            <span class="badge text-dark fs-5 text">8</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Vegetariana</div>
+              pomodoro, mozzarella, melanzane, peperoni, zucchine
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">La Rosa Selvaggia</div>
+              pomodoro, mozzarella, salsiccia, crema di radicchio, scamorza affumicata
+            </div>
+            <span class="badge text-dark fs-5 text">8.5</span>
+          </li>
+        </ul>
       </div>
-    </section>
+      <div class="sections">
+        <ul class="list-group list-group-flush text-start">
+          <li
+            class="list-group-item d-flex justify-content-center text-center align-items-center mt-1 text-light"   style="background-color: #703b3b;"
+          >
+              <div id="bianche" class="fw-bold fs-5">Bianche</div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Tartufata</div>
+              mozzarella, porcini, crema tartufata
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Buna</div>
+              mozzarella, friarielli, salsiccia
+            </div>
+            <span class="badge text-dark fs-5 text">7</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Mediterranea
+              </div>
+              mozzarella, friarielli, salame piccante, salsiccia
+            </div>
+            <span class="badge text-dark fs-5 text">8</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Messicana </div>
+              mozzarella di bufala, pancetta, olio piccante
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Salamina</div>
+              mozzarella, salamino piccante, friarielli
+            </div>
+            <span class="badge text-dark fs-5 text">7.5</span>
+          </li>
+          <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Gorgonzola e Noci</div>
+            mozzarella, gorgonzola, noci
+          </div>
+          <span class="badge text-dark fs-5 text">7.5</span>
+        </li>          <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+      >
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Bologna</div>
+          mozzarella, fuori cottura: mortadella, straciatella, crema di pistacchio
+        </div>
+        <span class="badge text-dark fs-5 text">9.5</span>
+      </li>          <li
+      class="list-group-item d-flex justify-content-between align-items-center"
+    >
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">La Rustica</div>
+        mozzarella, pancetta, stracchino, patate al forno
+      </div>
+      <span class="badge text-dark fs-5 text">8.5</span>
+    </li>          <li
+    class="list-group-item d-flex justify-content-between align-items-center"
+  >
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">La Natalizia</div>
+      mozzarella, gorgonzola, porcini, noci
+    </div>
+    <span class="badge text-dark fs-5 text">8.5</span>
+  </li>          <li
+  class="list-group-item d-flex justify-content-between align-items-center"
+>
+  <div class="ms-2 me-auto">
+    <div class="fw-bold">Carbonara</div>
+    mozzarella di bufala, pancetta, uova, pepe nero
+  </div>
+  <span class="badge text-dark fs-5 text">8.5</span>
+</li>          <li
+class="list-group-item d-flex justify-content-between align-items-center"
+>
+<div class="ms-2 me-auto">
+  <div class="fw-bold">Ambrosia</div>
+  mozzarella di bufala, pomodorini, pesto genovese
+</div>
+<span class="badge text-dark fs-5 text">8.5</span>
+</li>          <li
+class="list-group-item d-flex justify-content-between align-items-center"
+>
+<div class="ms-2 me-auto">
+  <div class="fw-bold">Piccantina</div>
+  mozzarella, salame piccante, acciughe, friarielli
+</div>
+<span class="badge text-dark fs-5 text">8</span>
+</li>          <li
+class="list-group-item d-flex justify-content-between align-items-center"
+>
+<div class="ms-2 me-auto">
+  <div class="fw-bold">Stria</div>
+  
+</div>
+<span class="badge text-dark fs-5 text">3</span>
+</li>
+        </ul>
+      </div>
+      <div class="sections">
+        <ul class="list-group list-group-flush text-start">
+          <li
+            class="list-group-item d-flex justify-content-center text-center align-items-center mt-1 text-light"   style="background-color: #703b3b;"
+          >
+              <div id="metro" class="fw-bold fs-5">Al metro</div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Margherita</div>
+              pomodoro, mozzarella
+            </div>
+            <span class="badge text-dark fs-5 text">12</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Metà Margherita / Metà Farcita</div>
+              pomodoro, mozzarella / ...
+            </div>
+            <span class="badge text-dark fs-5 text">14</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Due terzi Farcita</div>
+              pomodoro, mozzarella /... /...
+            </div>
+            <span class="badge text-dark fs-5 text">15.5</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Farcita</div>
+              ingrdienti a tua scelta...
+            </div>
+            <span class="badge text-dark fs-5 text">17</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Super Farcita</div>
+              ingrdienti a tua scelta...
+            </div>
+            <span class="badge text-dark fs-5 text">19.5</span>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="sections">
+        <ul class="list-group list-group-flush text-start">
+          <li
+            class="list-group-item d-flex justify-content-center text-center align-items-center mt-1 text-light"   style="background-color: #703b3b;"
+          >
+              <div class="fw-bold fs-5">Supplementi</div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Supplementi da 0.5</div>
+              olive, funghi, acciughe, carciofi, prosciutto cotto, salsiccia, cipolla, doppia mozzarella,
+            </div>
+            <span class="badge text-dark fs-5 text">nomeP</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">nomeP</div>
+              ingridients
+            </div>
+            <span class="badge text-dark fs-5 text">15</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">nomeP</div>
+              ingridients
+            </div>
+            <span class="badge text-dark fs-5 text">16</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">nomeP</div>
+              ingridients
+            </div>
+            <span class="badge text-dark fs-5 text">17</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">nomeP</div>
+              ingridients
+            </div>
+            <span class="badge text-dark fs-5 text">18</span>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+          <!-- footer -->
+          <div class="row bg-foot">
+            <div class="col-12">
+              <footer class="bg-dark text-light py-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      <h4 class="mb-4">Chiamaci</h4>
+                      <ul class="list-unstyled">
+                        <li class="foot-li-s"><a class="foot-a" href="tel:0522154 6131">0522 154 6131</a></li>
+                        <li class="foot-li-s">42026 Ciano d'Enza RE</a></li>
+                        <li class="foot-li-s">Piazza Giacomo Matteotti, 11</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <h4 class="mb-4">Menu</h4>
+                      <ul class="list-unstyled ">
+                        <li class="foot-li-s"><a class="foot-a" href="#bianche">Bianche</a></li>
+                        <li class="foot-li-s"><a class="foot-a" href="#gustose">Gustose</a></li>
+                        <li class="foot-li-s"><a class="foot-a" href="#metro">Al Metro</a></li>
+                        <!-- <li><a class="foot-a" href="#">Drinks</a></li>
+                        <li><a class="foot-a" href="#">Desserts</a></li> -->
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <h4 class="mb-4">Su di noi</h4>
+                      <p>
+                        Pizzeria del Centro, situata nel cuore di Ciano d'Enza. Offriamo una vasta selezione di pizze preparate con ingredienti freschi e di qualità. Venite a gustare le nostre specialità in un ambiente accogliente e familiare. Grazie per averci scelto come la vostra pizzeria preferita!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Copyright -->
+              </footer>
+              <div class="text-center bg-dark text-light">
+                © Copyright:
+                <a
+                  class="text-white"
+                  href="https://www.instagram.com/carmine__mattia/"
+                  target="_blank"
+                  >Carmine Mattia Castello</a
+                >
+              </div>
+    <script src="/script.js"></script>
   </body>
 </html>

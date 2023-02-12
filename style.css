@@ -1,11 +1,12 @@
 /* temporary css */
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Montserrat", sans-serif;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 header {
-  background-color: #b53f3f;
+  background-color: #c14545;
   padding: 1em;
   color: white;
   text-align: center;
@@ -18,7 +19,108 @@ header h1 {
 main {
   padding: 2em;
 }
+/* lineheight */
+.lh {
+  line-height: 25px;
+}
+/* nav */
+.bg-nav {
+  background-color: #333536;
+  /* background-color: #faf4d0; */
+}
+/* hero */
+.hero {
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Add this to enable z-index */
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/stock.1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(71, 71, 71);
+  background-blend-mode: overlay;
+  filter: blur(5px); /* Change the value to adjust the blur effect */
+}
 
+.fw-600 {
+  font-weight: 600;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.hero-subtitle {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.img-background {
+  background-image: url(/img/stock.1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(71, 71, 71);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(10px);
+}
+
+.button-hero {
+  display: inline-block;
+  background: #601c15;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  position: relative; /* Add this to enable z-index */
+  z-index: 1; /* Add this to adjust the stacking order */
+}
+.button-hero:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px, -10px) scale(1.2);
+  transform: translate(0px, -10px) scale(1.2);
+}
+/* about us */
+.home-about h2 {
+  letter-spacing: 2px;
+}
+.img-aboutus {
+  width: 100%;
+}
+.aboutus-p {
+  text-align: justify;
+  letter-spacing: 1.1px;
+}
+
+.foot-li-s {
+  padding-bottom: 1rem;
+}
+.foot-a {
+  color: inherit; /* this will remove the blue color */
+  text-decoration: none; /* this will remove the underline */
+}
+.foot-a:hover,
+.foot-a:active {
+  color: #b53f3f;
+}
 form {
   display: inline-block;
   margin-top: 2em;
@@ -46,8 +148,26 @@ footer {
   background-color: #f2f2f2;
   padding: 1em;
   text-align: center;
+  letter-spacing: 2px;
 }
 /* ********** */
 .btn-sm {
   width: 19%;
+}
+/* menu */
+
+.contenitore-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.sections {
+  display: grid;
+  place-items: stretch;
+  margin-top: 1rem;
+  /* background: lightpink; */
+}
+.sections > ul > li {
+  background-color: #fcf7de;
 }
