@@ -15,3 +15,16 @@ window.onscroll = function () {
   }
   prevScrollPos = currentScrollPos;
 };
+
+// contact us flex columnd add function
+function addFlexClassesToContactUsContainer() {
+  if (window.innerWidth <= 676) {
+    // Check if the screen size is less than or equal to 576px (mobile size)
+    let contactUsContainer = document.getElementById("contactUsContainer");
+    contactUsContainer.classList.add("d-flex");
+    contactUsContainer.classList.add("flex-column");
+  }
+}
+
+window.addEventListener("load", addFlexClassesToContactUsContainer);
+window.addEventListener("resize", addFlexClassesToContactUsContainer);
